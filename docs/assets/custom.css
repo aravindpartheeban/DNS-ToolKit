@@ -6,24 +6,62 @@
 }
 
 :root {
-  --bg: #0b0f17;
-  --card: #111a2b;
-  --border: #1e2b44;
+  --bg: #05070d;
+  --panel: #090f1c;
+  --card: #0c1220;
+  --border: #2a3770;
 
-  --text: #dbe2f3;
-  --text-dim: #aebcd7;
+  --text: #dbe2ff;
+  --text-dim: #a6b4d8;
 
-  --purple: #6f3dff;
-  --purple-bright: #8b5bff;
-  --cyan: #4dd0ff;
+  --purple: #8d6bff;
+  --neon-purple: #b488ff;
 }
+
+/* =========
+ Typography — Cyber / Console UI
+========= */
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: radial-gradient(circle at top, #0f1938, #05070d);
   color: var(--text);
-  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
-  line-height: 1.6;
+
+  font-family:
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Text",
+    Ubuntu,
+    Cantarell,
+    Arial,
+    system-ui,
+    sans-serif;
+
+  line-height: 1.65;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings — console style */
+h1, h2, h3 {
+  font-family:
+    "Cascadia Mono",
+    Consolas,
+    "SF Mono",
+    "JetBrains Mono",
+    monospace;
+
+  color: white;
+  letter-spacing: 0.6px;
+}
+
+/* Cursor underscore */
+h1::after {
+  content: " _";
+  color: var(--neon-purple);
 }
 
 /* =========
@@ -36,96 +74,136 @@ body {
 }
 
 /* =========
- Hero / Header
+ Hero — Purple Cyber Header
 ========= */
 .hero {
   text-align: center;
   padding: 60px 18px 40px;
-  background: linear-gradient(
-      180deg,
-      rgba(111, 61, 255, 0.25),
-      transparent 60%
-    ),
-    radial-gradient(
-      1000px 300px at top,
-      rgba(77, 208, 255, 0.15),
-      transparent
-    );
+
+  background:
+    radial-gradient(900px 300px at top, rgba(125, 88, 255, 0.22), transparent),
+    linear-gradient(180deg, rgba(50, 20, 110, 0.25), transparent);
+
   border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 
 .hero h1 {
   font-size: 2.6rem;
-  font-weight: 800;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.hero p {
-  max-width: 760px;
-  margin: 0 auto 10px;
-  color: var(--text);
+  margin-bottom: 12px;
 }
 
 /* =========
- Buttons
+ Purple-Neon Terminal Button
 ========= */
 .btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+
   padding: 12px 22px;
-  border-radius: 12px;
-  font-weight: 600;
+  border-radius: 10px;
+  font-weight: 700;
 
-  background: linear-gradient(135deg, #6f3dff, #915cff);
-  color: white;
-  box-shadow: 0 10px 28px rgba(111, 61, 255, 0.45);
+  font-family: "Cascadia Mono", Consolas, monospace;
 
-  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  background: linear-gradient(135deg, #8d6bff, #b88aff);
+  color: #0f0820;
+
+  box-shadow:
+    0 0 14px rgba(170, 130, 255, 0.6),
+    inset 0 0 8px rgba(0,0,0,.4);
+
+  transition: transform .15s ease, box-shadow .2s ease;
+
   text-decoration: none;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 34px rgba(111, 61, 255, 0.6);
+  box-shadow:
+    0 0 22px rgba(190, 150, 255, 0.85),
+    inset 0 0 12px rgba(0,0,0,.55);
 }
 
 .btn svg.dl {
   width: 18px;
   height: 18px;
-  stroke: white;
+  stroke: #0f0820;
   stroke-width: 2;
   fill: none;
 }
 
 /* =========
- Cards
+ TERMINAL-STYLE CARDS 🔥
 ========= */
+
 .card {
+  position: relative;
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 22px 22px 14px;
-  margin: 28px 0;
+  border-radius: 14px;
 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  padding: 22px 22px 16px;
+  margin: 30px 0;
+
+  box-shadow:
+    0 22px 45px rgba(0, 0, 0, 0.55),
+    0 0 14px rgba(150, 110, 255, 0.25);
+}
+
+/* Top bar like a terminal window */
+.card::before {
+  content: "";
+  display: block;
+  height: 28px;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 14px 14px 0 0;
+
+  background: linear-gradient(135deg, #1c2347, #262f63);
+  border-bottom: 1px solid #35447a;
+}
+
+/* Terminal dots */
+.card::after {
+  content: "● ● ●";
+  position: absolute;
+  top: 4px;
+  left: 12px;
+
+  font-family: Consolas, monospace;
+  font-size: 13px;
+  color: #c7b3ff;
+  opacity: 0.9;
 }
 
 .card h2 {
-  margin-top: 2px;
-  color: #ffffff;
-  letter-spacing: 0.3px;
+  margin-top: 28px;
   display: flex;
   align-items: center;
 }
 
+/* Subtle scan line effect */
+.card {
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.02) 0px,
+      rgba(255,255,255,0.02) 1px,
+      transparent 2px,
+      transparent 4px
+    );
+}
+
 /* =========
- Accent Icons
+ Purple Neon Accent Icons
 ========= */
 .icon {
   display: inline-flex;
-  vertical-align: middle;
   margin-right: 8px;
 }
 
@@ -133,11 +211,14 @@ body {
   width: 22px;
   height: 22px;
   fill: none;
-  stroke: #8b5bff;
+  stroke: #c9acff;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
-  filter: drop-shadow(0 0 6px rgba(139, 91, 255, 0.35));
+
+  filter:
+    drop-shadow(0 0 4px rgba(180, 140, 255, 0.7))
+    drop-shadow(0 0 10px rgba(150, 110, 255, 0.5));
 }
 
 /* =========
@@ -152,9 +233,9 @@ body {
  Images
 ========= */
 .shot {
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,.08);
-  box-shadow: 0 18px 60px rgba(0,0,0,.55);
+  border-radius: 14px;
+  border: 1px solid rgba(170, 130, 255, 0.3);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.7);
   max-width: 100%;
   height: auto;
 }
@@ -163,16 +244,21 @@ body {
  Links
 ========= */
 a {
-  color: var(--cyan);
+  color: var(--neon-purple);
 }
 
 /* =========
- Footer
+ Footer — console style
 ========= */
 footer {
   margin-top: 40px;
   opacity: 0.9;
   color: var(--text-dim);
+
+  font-family:
+    "Cascadia Mono",
+    Consolas,
+    monospace;
 }
 
 /* =========
@@ -180,12 +266,12 @@ footer {
 ========= */
 @media (max-width: 720px) {
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2.25rem;
   }
 
   .btn {
     width: 100%;
     justify-content: center;
-    max-width: 340px;
+    max-width: 360px;
   }
 }
