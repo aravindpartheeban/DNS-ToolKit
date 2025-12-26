@@ -36,16 +36,27 @@ h1, h2, h3 {
   padding-bottom: 4px;
 }
 
-.download-btn {
+.btn {
   display:inline-block;
-  padding:10px 16px;
-  background:#8a5cff;
-  color:white !important;
-  border-radius:6px;
+  padding:12px 22px;
+  background:#8b5cf6;              
+  color:#ffffff !important;
   font-weight:600;
-  text-decoration:none;
+  border-radius:10px;
+  text-decoration:none !important;
+  border:1px solid rgba(255,255,255,.15);
+  box-shadow:0 6px 16px rgba(0,0,0,.35);
+  transition:all .2s ease;
 }
 
-.download-btn:hover {
-  background:#a57dff;
+.btn:hover {
+  background:#7c3aed;              
+  transform:translateY(-1px);
+  box-shadow:0 10px 22px rgba(0,0,0,.45);
 }
+
+.btn:active {
+  transform:translateY(0);
+  box-shadow:0 4px 12px rgba(0,0,0,.35);
+}
+
