@@ -2,8 +2,9 @@
 
 A lightweight Windows utility to **test, compare, and set DNS providers** — with built-in latency benchmarking and privacy-friendly defaults.
 
-<a class="download-btn" href="https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest/download/DNS-ToolKit.zip">
-⬇ Download for Windows (.zip)
+<a class="btn" 
+   href="https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest/download/DNS-ToolKit.zip">
+   ⬇ Download for Windows (.zip)
 </a>
 
 ---
@@ -48,6 +49,7 @@ All DNS changes are applied locally using standard Windows networking commands.
 <p align="center">
   <sub>Made for developers, tweakers, gamers, privacy-nerds & network geeks 💜</sub>
 </p>
+
 
 
 
