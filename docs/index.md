@@ -1,17 +1,20 @@
+---
+layout: default
+title: DNS-ToolKit
+---
+
 <link rel="stylesheet" href="assets/custom.css">
 
-<div class="card" style="text-align:center">
+<div class="hero">
 
-A lightweight Windows utility to **test, compare, and set DNS providers** <br> with built-in latency benchmarking and privacy-friendly defaults.
+  <p class="hero-text">
+    A lightweight Windows utility to <strong>test, compare, and set DNS providers</strong> — with built-in latency benchmarking and privacy-friendly defaults.
+  </p>
 
-<br>
-
-<p align="center">
   <a class="btn" 
      href="https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest/download/DNS-ToolKit.zip">
      ⬇ Download for Windows (.zip)
   </a>
-</p>
 
 </div>
 
@@ -77,5 +80,6 @@ A lightweight Windows utility to **test, compare, and set DNS providers** <br> w
 <p class="footer-note">
 Made for developers, tweakers, gamers, privacy-nerds & network geeks 💜
 </p>
+
 
 
