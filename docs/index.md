@@ -3,12 +3,15 @@ layout: default
 title: DNS Toolkit
 ---
 
+<link rel="stylesheet" href="assets/custom.css">
+
 # DNS Toolkit
 
 **A lightweight Windows utility to test, compare, and switch DNS providers — with built-in latency benchmarking and privacy-friendly defaults.**
 
-<a class="btn-download" href="https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest">
-  ⬇ Download for Windows
+<a class="download-btn"
+href="https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest">
+⬇ Download for Windows
 </a>
 
 ---
@@ -84,4 +87,5 @@ https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest
 - No installer — portable EXE
 
 ---
+
 
