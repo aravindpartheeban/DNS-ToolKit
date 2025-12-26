@@ -18,54 +18,52 @@ A lightweight Windows utility to <b>test, compare, and set DNS providers</b> —
 ---
 
 <div class="card">
+  <h2>🖥 App Screenshots</h2>
 
-<h2 align="center">🖥 App Screenshots</h2>
+  <p align="center">
+    <img class="shot" src="assets/screenshot_main.png" width="780">
+  </p>
 
-<p class="center">
-  <img class="screenshot" src="assets/screenshot_main.png" width="780">
-</p>
-
-<p class="center">
-  <img class="screenshot" src="assets/screenshot_results.png" width="780">
-</p>
-
+  <p align="center">
+    <img class="shot" src="assets/screenshot_results.png" width="780">
+  </p>
 </div>
 
 ---
 
 <div class="card">
+  <h2>⭐ Why Use DNS Toolkit?</h2>
 
-<h2 align="center">⭐ Why Use DNS Toolkit?</h2>
-
-- Measure <b>real-world DNS latency</b> using parallel ping tests  
-- <b>One-click DNS switching</b> for your selected network adapter  
-- Built-in <b>DNS recommendation engine</b> (Gaming, Privacy, Security, Ad-Blocking, Family-Safe, Balanced)
-- Supports DNS providers like <b>Cloudflare, Google, Quad9, Mullvad, NextDNS, AdGuard & ControlD</b>
-- <b>Zero telemetry. Zero proxying. Local-only configuration.</b>
-
+  <ul>
+    <li>Measure <strong>real-world DNS latency</strong> using parallel ping tests</li>
+    <li><strong>One-click DNS switching</strong> for your selected network adapter</li>
+    <li>Built-in <strong>DNS recommendation engine</strong> (Gaming, Privacy, Security, Ad-Blocking, Family-Safe, Balanced)</li>
+    <li>Supports DNS providers like <strong>Cloudflare, Google, Quad9, Mullvad, NextDNS, AdGuard & ControlD</strong></li>
+    <li><strong>Zero telemetry.</strong> Zero proxying. Local-only configuration.</li>
+  </ul>
 </div>
 
 ---
 
 <div class="card">
+  <h2>🔒 Private by Design</h2>
 
-<h2 align="center">🔒 Private by Design</h2>
-
-DNS Toolkit does <b>not</b> route or inspect DNS traffic and <b>does not collect analytics</b>.  
-All DNS changes are applied locally using standard Windows networking commands.
-
+  <ul>
+    <li>DNS Toolkit <strong>does not route or inspect DNS traffic</strong> and <strong>does not collect analytics</strong>.</li>
+   <li> All DNS changes are applied locally using standard Windows networking commands.</li>
+  </ul>
 </div>
 
 ---
 
 <div class="card">
+  <h2>🖥 Requirements</h2>
 
-<h2 align="center">🖥 Requirements</h2>
-
-- Windows 10 or Windows 11  
-- Administrator privileges to change DNS settings  
-- Portable <code>.exe</code> — no installer required
-
+  <ul>
+    <li>Windows 10 or Windows 11</li>
+    <li>Administrator privileges to change DNS settings</li>
+    <li>Portable <code>.exe</code> — no installer required</li>
+  </ul>
 </div>
 
 ---
@@ -73,3 +71,4 @@ All DNS changes are applied locally using standard Windows networking commands.
 <p align="center">
   <sub>Made for developers, tweakers, gamers, privacy-nerds & network geeks 💜</sub>
 </p>
+
