@@ -2,7 +2,8 @@
 
 <div class="card" style="text-align:center">
 
-A lightweight Windows utility to **test, compare, and set DNS providers** — with built-in latency benchmarking and privacy-friendly defaults.
+A lightweight Windows utility to **test, compare, and set DNS providers**
+with built-in latency benchmarking and privacy-friendly defaults.
 
 <br>
 
@@ -53,7 +54,7 @@ A lightweight Windows utility to **test, compare, and set DNS providers** — wi
 
 <h2 align="center">🔒 Private by Design</h2>
 
-DNS Toolkit does **not** route or inspect DNS traffic and **does not collect analytics**.  
+DNS Toolkit does not route or inspect DNS traffic and does not collect analytics.  
 All DNS changes are applied locally using standard Windows networking commands.
 
 </div>
@@ -75,3 +76,4 @@ All DNS changes are applied locally using standard Windows networking commands.
 <p class="footer-note">
 Made for developers, tweakers, gamers, privacy-nerds & network geeks 💜
 </p>
+
