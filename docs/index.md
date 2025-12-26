@@ -1,91 +1,61 @@
----
-layout: default
-title: DNS Toolkit
----
+# DNS Toolkit
 
 <link rel="stylesheet" href="assets/custom.css">
 
-# DNS Toolkit
+A lightweight Windows utility to **test, compare, and switch DNS providers** — with built-in latency benchmarking and privacy-friendly defaults.
 
-**A lightweight Windows utility to test, compare, and switch DNS providers — with built-in latency benchmarking and privacy-friendly defaults.**
-
-<a class="download-btn"
-href="https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest">
+<a class="download-btn" href="https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest">
 ⬇ Download for Windows
 </a>
 
 ---
 
-## ✨ Key Features
+## 🖥 App Screenshots
 
-<div class="feature-box">
-✔ DNS latency benchmarking with parallel ping tests
-</div>
+> (Replace these paths with your real screenshots in `/docs/assets/`)
 
-<div class="feature-box">
-✔ One-click DNS switching
-</div>
+<p align="center">
+  <img src="docs/assets/screenshot_main.png" width="780">
+</p>
 
-<div class="feature-box">
-✔ Gaming, Privacy-Focused, Ad-Blocking & Family-Safe profiles
-</div>
-
-<div class="feature-box">
-✔ Auto-recommendation engine
-</div>
-
-<div class="feature-box">
-✔ No telemetry • No proxying • Uses native Windows networking tools
-</div>
+<p align="center">
+  <img src="docs/assets/screenshot_results.png" width="780">
+</p>
 
 ---
 
-## 🛠 Included DNS Providers
+## ⭐ Why Use DNS Toolkit?
 
-**Gaming / General-Use**
-- Cloudflare  
-- Google  
-
-**Privacy-Focused**
-- NextDNS  
-- Quad9  
-- Mullvad  
-- ControlD  
-
-**Ad-Blocking**
-- AdGuard  
-- Mullvad Adblock  
-- ControlD Hagezi & OISD profiles  
-
-**Family-Safe**
-- CleanBrowsing  
-- AdGuard Family  
-- Quad9 Security  
-- ControlD Family  
+- Measure **real-world DNS latency** using parallel ping tests  
+- **One-click DNS switching** for your selected network adapter  
+- Built-in **DNS recommendation engine** (Gaming, Privacy, Security, Family-Safe, Balanced)
+- Supports popular DNS providers like **Cloudflare, Google, Quad9, Mullvad, NextDNS, AdGuard & ControlD**
+- **Zero telemetry. Zero proxying. Local-only configuration.**
 
 ---
 
-## 🔒 Privacy Notice
+## 🔒 Private by Design
 
-DNS Toolkit does **not proxy your traffic** and **does not collect telemetry**.  
-All configuration is applied locally using standard Windows networking commands.
-
----
-
-## ⬇ Download
-
-👉 **Get the latest version here:**
-
-https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest
+DNS Toolkit **does not route or inspect DNS traffic** and **does not collect analytics**.  
+All DNS changes are applied locally using standard Windows networking commands.
 
 ---
 
-## 💻 Requirements
+## 📥 Download
 
-- Windows 10 or 11  
-- Administrator privileges for DNS changes  
-- No installer — portable EXE
+Get the latest version here:
+**https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest**
 
 ---
 
+## 🖥 Requirements
 
+- Windows 10 or Windows 11  
+- Administrator privileges to change DNS settings  
+- No installer — portable `.exe`
+
+---
+
+<p align="center">
+  <sub>Made for developers, tweakers, gamers, privacy-nerds & network geeks 💜</sub>
+</p>
