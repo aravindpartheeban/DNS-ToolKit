@@ -13,11 +13,11 @@ A lightweight Windows utility to **test, compare, and switch DNS providers** —
 ## 🖥 App Screenshots
 
 <p align="center">
-  <img src="https://github.com/aravindpartheeban/DNS-ToolKit/docs/assets/screenshot_main.png" width="780">
+  <img src="assets/screenshot_main.png" width="780">
 </p>
 
 <p align="center">
-  <img src="https://github.com/aravindpartheeban/DNS-ToolKit/docs/assets/screenshot_results.png" width="780">
+  <img src="assets/screenshot_results.png" width="780">
 </p>
 
 ---
@@ -57,4 +57,5 @@ Get the latest version here:
 <p align="center">
   <sub>Made for developers, tweakers, gamers, privacy-nerds & network geeks 💜</sub>
 </p>
+
 
