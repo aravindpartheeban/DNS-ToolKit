@@ -1,73 +1,98 @@
-/* ===== Layout ===== */
-
 body {
-  background: #0f1117;
+  background: #0f0f14;
+  color: #e6e6ff;
 }
 
-/* Shared card container */
-.card {
-  background: #111827;
-  border-radius: 14px;
-  box-shadow: 0 10px 22px rgba(0,0,0,.35);
-  padding: 26px 32px;
-  margin: 26px auto;
-  max-width: 900px;
-  border: 1px solid rgba(255,255,255,.06);
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+
+body, code {
+  font-family: "JetBrains Mono", monospace;
 }
 
-/* ===== Hero Section ===== */
-
-.hero {
-  text-align: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+.page-header {
+  background: linear-gradient(135deg,#6c3ad6,#9a69ff);
+  color: white !important;
 }
 
-.hero-text {
-  font-size: 1.15rem;
-  line-height: 1.65;
-  margin-bottom: 20px;
+a {
+  color: #b58bff;
 }
 
-/* ===== Buttons ===== */
+a:hover {
+  color: #d5c2ff;
+}
+
+section {
+  background: #14141d;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #2c2c3b;
+}
+
+h1, h2, h3 {
+  color: #e6e6ff;
+  border-bottom: 1px solid #2b2b36;
+  padding-bottom: 4px;
+}
 
 .btn {
-  background: linear-gradient(135deg,#9b5cff,#b680ff);
-  color: white !important;
-  padding: 12px 22px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-block;
-  box-shadow: 0 10px 22px rgba(155,92,255,.35);
+  display:inline-block;
+  padding:12px 22px;
+  background:#8b5cf6;              
+  color:#ffffff !important;
+  font-weight:600;
+  border-radius:10px;
+  text-decoration:none !important;
+  border:1px solid rgba(255,255,255,.15);
+  box-shadow:0 6px 16px rgba(0,0,0,.35);
+  transition:all .2s ease;
 }
 
 .btn:hover {
-  filter: brightness(1.08);
+  background:#7c3aed;              
+  transform:translateY(-1px);
+  box-shadow:0 10px 22px rgba(0,0,0,.45);
 }
 
-/* ===== Section Headers ===== */
-
-h2 {
-  text-align: center;
-  margin-bottom: 10px;
+.btn:active {
+  transform:translateY(0);
+  box-shadow:0 4px 12px rgba(0,0,0,.35);
 }
 
-/* ===== Lists ===== */
 
-.card ul {
-  margin-top: 12px;
-  line-height: 1.7;
+.card {
+  background:#141621;
+  border-radius:14px;
+  padding:18px 20px;
+  border:1px solid #2a2a3b;
+  margin:22px 0;
+  box-shadow:0 12px 28px rgba(0,0,0,.28);
 }
 
-.card li {
-  margin-bottom: 6px;
+
+.screenshot {
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:
+      0 22px 45px rgba(0,0,0,.45),
+      0 4px 15px rgba(0,0,0,.35);
+  transition: all .25s ease;
 }
 
-/* ===== Screenshots ===== */
+.screenshot:hover {
+  transform: translateY(-2px);
+  box-shadow:
+      0 26px 55px rgba(0,0,0,.55),
+      0 6px 18px rgba(0,0,0,.4);
+}
 
-.shot {
-  border-radius: 12px;
-  box-shadow: 0 10px 26px rgba(0,0,0,.45);
-  margin-top: 10px;
+.center {
+  text-align:center;
+}
+
+
+hr {
+  border: 0;
+  border-top: 1px solid #25283b;
 }
