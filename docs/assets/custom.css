@@ -60,3 +60,39 @@ h1, h2, h3 {
   box-shadow:0 4px 12px rgba(0,0,0,.35);
 }
 
+
+.card {
+  background:#141621;
+  border-radius:14px;
+  padding:18px 20px;
+  border:1px solid #2a2a3b;
+  margin:22px 0;
+  box-shadow:0 12px 28px rgba(0,0,0,.28);
+}
+
+
+.screenshot {
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:
+      0 22px 45px rgba(0,0,0,.45),
+      0 4px 15px rgba(0,0,0,.35);
+  transition: all .25s ease;
+}
+
+.screenshot:hover {
+  transform: translateY(-2px);
+  box-shadow:
+      0 26px 55px rgba(0,0,0,.55),
+      0 6px 18px rgba(0,0,0,.4);
+}
+
+.center {
+  text-align:center;
+}
+
+
+hr {
+  border: 0;
+  border-top: 1px solid #25283b;
+}
