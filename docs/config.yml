@@ -1,14 +1,10 @@
 title: DNS Toolkit
-description: Fast, private DNS switching & benchmarking for Windows.
-theme: minima
+description: A lightweight Windows utility to test, compare, and switch DNS providers.
+theme: jekyll-theme-cayman
+
+# Enable GitHub Pages extras
+plugins:
+  - jekyll-seo-tag
+
+# Optional neat URLs
 markdown: kramdown
-
-# Remove blog styling — treat as single-page site
-minima:
-  skin: dark
-  social_links: false
-
-# Disable posts
-collections:
-  posts:
-    output: false
