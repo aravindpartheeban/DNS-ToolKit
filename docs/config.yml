@@ -1,0 +1,14 @@
+title: DNS Toolkit
+description: Fast, private DNS switching & benchmarking for Windows.
+theme: minima
+markdown: kramdown
+
+# Remove blog styling — treat as single-page site
+minima:
+  skin: dark
+  social_links: false
+
+# Disable posts
+collections:
+  posts:
+    output: false
