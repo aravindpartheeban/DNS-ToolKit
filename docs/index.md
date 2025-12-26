@@ -1,11 +1,9 @@
-# DNS Toolkit
-
 <link rel="stylesheet" href="assets/custom.css">
 
-A lightweight Windows utility to **test, compare, and switch DNS providers** — with built-in latency benchmarking and privacy-friendly defaults.
+A lightweight Windows utility to **test, compare, and set DNS providers** — with built-in latency benchmarking and privacy-friendly defaults.
 
-<a class="download-btn" href="https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest">
-⬇ Download for Windows
+<a class="download-btn" href="https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest/download/DNS-ToolKit.zip">
+⬇ Download for Windows (.zip)
 </a>
 
 ---
@@ -26,7 +24,7 @@ A lightweight Windows utility to **test, compare, and switch DNS providers** —
 
 - Measure **real-world DNS latency** using parallel ping tests  
 - **One-click DNS switching** for your selected network adapter  
-- Built-in **DNS recommendation engine** (Gaming, Privacy, Security, Family-Safe, Balanced)
+- Built-in **DNS recommendation engine** (Gaming, Privacy, Security, Ad-Blocking, Family-Safe, Balanced)
 - Supports popular DNS providers like **Cloudflare, Google, Quad9, Mullvad, NextDNS, AdGuard & ControlD**
 - **Zero telemetry. Zero proxying. Local-only configuration.**
 
@@ -36,13 +34,6 @@ A lightweight Windows utility to **test, compare, and switch DNS providers** —
 
 DNS Toolkit **does not route or inspect DNS traffic** and **does not collect analytics**.  
 All DNS changes are applied locally using standard Windows networking commands.
-
----
-
-## 📥 Download
-
-Get the latest version here:
-**https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest**
 
 ---
 
@@ -57,5 +48,6 @@ Get the latest version here:
 <p align="center">
   <sub>Made for developers, tweakers, gamers, privacy-nerds & network geeks 💜</sub>
 </p>
+
 
 
