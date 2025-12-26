@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="assets/custom.css">
 
-<div class="card">
+<div class="card" style="text-align:center">
 
-<p align="center">
-A lightweight Windows utility to <b>test, compare, and set DNS providers</b> — with built-in latency benchmarking and privacy-friendly defaults.
-</p>
+A lightweight Windows utility to **test, compare, and set DNS providers** — with built-in latency benchmarking and privacy-friendly defaults.
+
+<br>
 
 <p align="center">
   <a class="btn" 
@@ -21,12 +21,12 @@ A lightweight Windows utility to <b>test, compare, and set DNS providers</b> —
 
 <h2 align="center">🖥 App Screenshots</h2>
 
-<p class="center">
-  <img class="screenshot" src="assets/screenshot_main.png" width="780">
+<p align="center">
+  <img src="assets/screenshot_main.png" width="780">
 </p>
 
-<p class="center">
-  <img class="screenshot" src="assets/screenshot_results.png" width="780">
+<p align="center">
+  <img src="assets/screenshot_results.png" width="780">
 </p>
 
 </div>
@@ -37,11 +37,13 @@ A lightweight Windows utility to <b>test, compare, and set DNS providers</b> —
 
 <h2 align="center">⭐ Why Use DNS Toolkit?</h2>
 
-- Measure <b>real-world DNS latency</b> using parallel ping tests  
-- <b>One-click DNS switching</b> for your selected network adapter  
-- Built-in <b>DNS recommendation engine</b> (Gaming, Privacy, Security, Ad-Blocking, Family-Safe, Balanced)
-- Supports DNS providers like <b>Cloudflare, Google, Quad9, Mullvad, NextDNS, AdGuard & ControlD</b>
-- <b>Zero telemetry. Zero proxying. Local-only configuration.</b>
+<ul>
+<li>Measure <b>real-world DNS latency</b> using parallel ping tests</li>
+<li><b>One-click DNS switching</b> for your selected network adapter</li>
+<li>Built-in <b>DNS recommendation engine</b> (Gaming, Privacy, Security, Ad-Blocking, Family-Safe, Balanced)</li>
+<li>Supports providers like <b>Cloudflare, Google, Quad9, Mullvad, NextDNS, AdGuard & ControlD</b></li>
+<li><b>Zero telemetry. Zero proxying. Local-only configuration.</b></li>
+</ul>
 
 </div>
 
@@ -51,7 +53,7 @@ A lightweight Windows utility to <b>test, compare, and set DNS providers</b> —
 
 <h2 align="center">🔒 Private by Design</h2>
 
-DNS Toolkit does <b>not</b> route or inspect DNS traffic and <b>does not collect analytics</b>.  
+DNS Toolkit does **not** route or inspect DNS traffic and **does not collect analytics**.  
 All DNS changes are applied locally using standard Windows networking commands.
 
 </div>
@@ -62,14 +64,14 @@ All DNS changes are applied locally using standard Windows networking commands.
 
 <h2 align="center">🖥 Requirements</h2>
 
-- Windows 10 or Windows 11  
-- Administrator privileges to change DNS settings  
-- Portable <code>.exe</code> — no installer required
+<ul>
+<li>Windows 10 or Windows 11</li>
+<li>Administrator privileges to change DNS settings</li>
+<li>Portable <code>.exe</code> — no installer required</li>
+</ul>
 
 </div>
 
----
-
-<p align="center">
-  <sub>Made for developers, tweakers, gamers, privacy-nerds & network geeks 💜</sub>
+<p class="footer-note">
+Made for developers, tweakers, gamers, privacy-nerds & network geeks 💜
 </p>
