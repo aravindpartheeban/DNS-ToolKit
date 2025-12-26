@@ -3,6 +3,12 @@ body {
   color: #e6e6ff;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+
+body, code {
+  font-family: "JetBrains Mono", monospace;
+}
+
 .page-header {
   background: linear-gradient(135deg,#6c3ad6,#9a69ff);
   color: white !important;
