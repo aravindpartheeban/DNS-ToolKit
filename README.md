@@ -1,1 +1,3 @@
-**DNS Toolkit** is a lightweight Windows utility that helps you test, compare, and switch DNS providers using a simple, developer-friendly interface. It supports a range of gaming, privacy-focused, ad-blocking, and family-safe DNS providers, and allows you to benchmark latency and apply a selected DNS profile to your network adapter with a single click.
+## UI Preview
+
+![DNS Sinkhole UI](docs/assets/screenshot_main.png)
