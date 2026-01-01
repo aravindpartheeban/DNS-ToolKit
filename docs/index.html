@@ -1,136 +1,305 @@
----
-title: DNS Toolkit
----
+/* =========
+ Global Base
+========= */
+* {
+  box-sizing: border-box;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DNS Toolkit</title>
+:root {
+  --bg: #05070d;
+  --panel: #090f1c;
+  --card: #0c1220;
+  --border: #2a3770;
 
-  <link rel="stylesheet" href="assets/custom.css">
+  --text: #dbe2ff;
+  --text-dim: #a6b4d8;
 
-  <meta name="theme-color" content="#0b0f17">
-</head>
+  --purple: #8d6bff;
+  --neon-purple: #b488ff;
+}
 
-<body>
+/* =========
+ Typography — Cyber / Console UI
+========= */
 
-  <header class="hero">
-    <h1>DNS Toolkit</h1>
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0f1938, #05070d);
+  color: var(--text);
 
-    <p>
-      A lightweight Windows utility to <b>test, compare, and set DNS providers</b> — with built-in latency benchmarking and privacy-friendly defaults.
-    </p>
+  font-family:
+    "Segoe UI Variable Text",
+    "Segoe UI",
+    -apple-system,
+    BlinkMacSystemFont,
+    "SF Pro Text",
+    Ubuntu,
+    Cantarell,
+    Arial,
+    system-ui,
+    sans-serif;
 
-    <p>
-      <a class="btn"
-         href="https://github.com/aravindpartheeban/DNS-ToolKit/releases/latest/download/DNS-ToolKit.v1.1.zip">
-        <svg viewBox="0 0 24 24" class="dl">
-          <path d="M12 3v14m0 0l-5-5m5 5l5-5M5 21h14" />
-        </svg>
-        Download for Windows (.zip)
-      </a>
-    </p>
-  </header>
+  line-height: 1.65;
 
-  <main class="container">
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-    <div class="card">
-      <h2>
-        <span class="icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M3 5h18v14H3z M7 9h.01"/>
-          </svg>
-        </span>
-        App Screenshots
-      </h2>
+/* Headings — console style */
+h1, h2, h3 {
+  font-family:
+    "Cascadia Mono",
+    Consolas,
+    "SF Mono",
+    "JetBrains Mono",
+    monospace;
 
-      <p align="center">
-        <img class="shot" src="assets/screenshot_main.png" width="780">
-      </p>
+  color: white;
+  letter-spacing: 0.6px;
+}
 
-      <p align="center">
-        <img class="shot" src="assets/screenshot_results.png" width="780">
-      </p>
-    </div>
+/* Cursor underscore */
+h1::after {
+  content: " _";
+  color: var(--neon-purple);
+}
 
-    <div class="card">
-      <h2>
-        <span class="icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8-6.2-3.3-6.2 3.3 1.2-6.8-5-4.9 6.9-1z"/>
-          </svg>
-        </span>
-        Why Use DNS Toolkit?
-      </h2>
+/* =========
+ Layout
+========= */
+.container {
+  max-width: 960px;
+  margin: 40px auto 80px;
+  padding: 0 18px;
+}
+.card ol {
+  margin-top: 10px;
+}
 
-      <ul>
-        <li>Measure <strong>real-world DNS latency</strong> using parallel ping tests</li>
-        <li><strong>One-click DNS switching</strong> for your selected network adapter</li>
-        <li>Built-in <strong>DNS recommendation engine</strong> (Gaming, Privacy, Security, Ad-Blocking, Family-Safe, Balanced)</li>
-        <li>Supports DNS providers like <strong>Cloudflare, Google, Quad9, Mullvad, NextDNS, AdGuard & ControlD</strong></li>
-        <li><strong>Zero telemetry.</strong> Zero proxying. Local-only configuration.</li>
-      </ul>
-    </div>
+.card ol li {
+  margin: 14px 0 18px 4px;   /* key change */
+  line-height: 1.65;
+}
 
-    <div class="card">
-      <h2>
-        <span class="icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 1a5 5 0 00-5 5v3H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2v-9a2 2 0 00-2-2h-2V6a5 5 0 00-5-5z"/>
-          </svg>
-        </span>
-        Private by Design
-      </h2>
+.card ol li strong {
+  display: inline-block;
+  margin-bottom: 3px;        /* separates title from text */
+}
 
-      <ul>
-        <li>DNS Toolkit <strong>does not route or inspect DNS traffic</strong> and <strong>does not collect analytics</strong>.</li>
-        <li>All DNS changes are applied locally using standard Windows networking commands.</li>
-      </ul>
-    </div>
+/* =========
+ Hero — Purple Cyber Header
+========= */
+.hero {
+  text-align: center;
+  padding: 60px 18px 40px;
 
-    <div class="card">
-      <h2>
-        <span class="icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M3 4h18v12H3zM10 20h4"/>
-          </svg>
-        </span>
-        Requirements
-      </h2>
+  background:
+    radial-gradient(900px 300px at top, rgba(125, 88, 255, 0.22), transparent),
+    linear-gradient(180deg, rgba(50, 20, 110, 0.25), transparent);
 
-      <ul>
-        <li>Windows 10 or Windows 11</li>
-        <li>Administrator privileges to change DNS settings</li>
-        <li>Portable <code>.exe</code> — no installer required</li>
-      </ul>
-    </div>
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
 
-    <div class="card">
-      <h2>
-        <span class="icon">
-          <svg viewBox="0 0 24 24">
-            <path d="M12 21a9 9 0 1 1 9-9"/>
-          </svg>
-        </span>
-        Updates
-      </h2>
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+}
 
-      <ul>
-        <li>
-          <strong>Added option to Revert DNS to original state</strong><br>
-          You can now instantly restore your previous DNS configuration with a single click — perfect for testing, troubleshooting, or switching back to your default ISP DNS.
-        </li>
-      </ul>
-    </div>
+/* =========
+ Purple-Neon Terminal Button
+========= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 
-    <footer>
-      <p align="center">
-        <sub>Made for developers, tweakers, gamers, privacy-nerds & network geeks 💜</sub>
-      </p>
-    </footer>
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 700;
 
-  </main>
-</body>
-</html>
+  font-family: "Cascadia Mono", Consolas, monospace;
+
+  background: linear-gradient(135deg, #8d6bff, #b88aff);
+  color: #0f0820;
+
+  box-shadow:
+    0 0 14px rgba(170, 130, 255, 0.6),
+    inset 0 0 8px rgba(0,0,0,.4);
+
+  transition: transform .15s ease, box-shadow .2s ease;
+
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 22px rgba(190, 150, 255, 0.85),
+    inset 0 0 12px rgba(0,0,0,.55);
+}
+
+.btn svg.dl {
+  width: 18px;
+  height: 18px;
+  stroke: #0f0820;
+  stroke-width: 2;
+  fill: none;
+}
+
+/* =========
+ TERMINAL-STYLE CARDS 🔥
+========= */
+
+.card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  padding: 22px 22px 16px;
+  margin: 30px 0;
+
+  box-shadow:
+    0 22px 45px rgba(0, 0, 0, 0.55),
+    0 0 14px rgba(150, 110, 255, 0.25);
+}
+
+/* Top bar like a terminal window */
+.card::before {
+  content: "";
+  display: block;
+  height: 28px;
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border-radius: 14px 14px 0 0;
+
+  background: linear-gradient(135deg, #1c2347, #262f63);
+  border-bottom: 1px solid #35447a;
+}
+
+/* Terminal dots */
+.card::after {
+  content: "● ● ●";
+  position: absolute;
+  top: 4px;
+  left: 12px;
+
+  font-family: Consolas, monospace;
+  font-size: 13px;
+  color: #c7b3ff;
+  opacity: 0.9;
+}
+
+.card h2 {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+}
+
+/* Subtle scan line effect */
+.card {
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.02) 0px,
+      rgba(255,255,255,0.02) 1px,
+      transparent 2px,
+      transparent 4px
+    );
+}
+
+/* =========
+ Purple Neon Accent Icons
+========= */
+.icon {
+  display: inline-flex;
+  margin-right: 8px;
+}
+
+.icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: #c9acff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+
+  filter:
+    drop-shadow(0 0 4px rgba(180, 140, 255, 0.7))
+    drop-shadow(0 0 10px rgba(150, 110, 255, 0.5));
+}
+
+/* =========
+ Lists
+========= */
+.card ul li {
+  margin: 8px 0;
+  color: var(--text-dim);
+}
+
+/* =========
+ Images
+========= */
+.shot {
+  border-radius: 14px;
+  border: 1px solid rgba(170, 130, 255, 0.3);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.7);
+  max-width: 100%;
+  height: auto;
+}
+
+.screenshot-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.shot-small {
+  width: 360px;         
+  max-width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(170,130,255,0.35);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
+}
+
+/* =========
+ Links
+========= */
+a {
+  color: var(--neon-purple);
+}
+
+/* =========
+ Footer — console style
+========= */
+footer {
+  margin-top: 40px;
+  opacity: 0.9;
+  color: var(--text-dim);
+
+  font-family:
+    "Cascadia Mono",
+    Consolas,
+    monospace;
+}
+
+/* =========
+ Mobile
+========= */
+@media (max-width: 720px) {
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+    max-width: 360px;
+  }
+}
