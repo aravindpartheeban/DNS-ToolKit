@@ -72,6 +72,19 @@ h1::after {
   margin: 40px auto 80px;
   padding: 0 18px;
 }
+.card ol {
+  margin-top: 10px;
+}
+
+.card ol li {
+  margin: 14px 0 18px 4px;   /* key change */
+  line-height: 1.65;
+}
+
+.card ol li strong {
+  display: inline-block;
+  margin-bottom: 3px;        /* separates title from text */
+}
 
 /* =========
  Hero — Purple Cyber Header
@@ -238,6 +251,21 @@ h1::after {
   box-shadow: 0 22px 70px rgba(0, 0, 0, 0.7);
   max-width: 100%;
   height: auto;
+}
+
+.screenshot-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.shot-small {
+  width: 400px;         
+  max-width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(170,130,255,0.35);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.55);
 }
 
 /* =========
